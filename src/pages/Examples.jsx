@@ -60,7 +60,9 @@ toast.info('Important information');`;
 
     return (
         <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8 text-gray-800">Examples</h1>
+            <h1 className="text-4xl font-bold mb-8 ml-12 md:ml-0 text-gray-800">
+                Examples
+            </h1>
 
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">
@@ -73,7 +75,7 @@ toast.info('Important information');`;
                 <h2 className="text-2xl font-semibold mb-4 text-gray-700">
                     Live Demonstrations
                 </h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                     {["default", "success", "error", "warning", "info"].map(
                         (type) => (
                             <button

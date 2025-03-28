@@ -64,12 +64,12 @@ function DemoSection() {
     ];
 
     return (
-        <section className="mt-12">
+        <section className="mt-12 px-4">
             <h2 className="text-2xl font-semibold mb-6 text-gray-700">
                 Interactive Demo
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div>
                     <h3 className="text-lg font-semibold mb-4">
                         Toast Configuration
@@ -108,14 +108,14 @@ function DemoSection() {
 
                 <div>
                     <h3 className="text-lg font-semibold mb-4">Toast Types</h3>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         {["default", "success", "error", "warning", "info"].map(
                             (type) => (
                                 <button
                                     key={type}
                                     onClick={() => showToast(type)}
                                     className={`
-                  px-4 py-2 rounded text-white capitalize 
+                  px-4 py-2 rounded text-white capitalize text-sm
                   ${type === "default" && "bg-gray-500"}
                   ${type === "success" && "bg-green-500"}
                   ${type === "error" && "bg-red-500"}
@@ -124,7 +124,7 @@ function DemoSection() {
                   hover:opacity-90 transition-opacity
                 `}
                                 >
-                                    {type} Toast
+                                    {type}
                                 </button>
                             )
                         )}

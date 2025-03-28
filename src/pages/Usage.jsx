@@ -41,7 +41,7 @@ const toast = new ToastManager({
 
     return (
         <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8 text-gray-800">
+            <h1 className="text-4xl font-bold mb-8 ml-12 md:ml-0 text-gray-800">
                 Usage Guide
             </h1>
 
